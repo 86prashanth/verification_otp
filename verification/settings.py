@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'code_',
     'verify_app',
     'todo_mail',
+    'Verification_Otp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+API_KEY='35c0e1b2-48b0-11ee-addf-0200cd936042'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

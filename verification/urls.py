@@ -18,11 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from verify_app.views import *
 from todo_mail.views import *
+from Verification_Otp.views import send_otp,verify_otp
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home,name='home'),
+    path('send_otp/',send_otp,name='send_otp'),
+    path('verify_otp/',verify_otp,name='verify_otp'),
     path('login/',auth_view,name='auth'),
     path('verify/',verify_view,name='verify'),
     path('create/',todo_create,name='create'),
